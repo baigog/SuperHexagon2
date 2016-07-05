@@ -1,0 +1,40 @@
+ENTITY SUPERHEXAGON2 IS
+
+END ENTITY;
+
+
+ARCHITECTURE BEH OF SUPERHEXAGON2 IS
+
+BEGIN
+DRIVER_VGA: CONTROLADOR_VGA GENERIC MAP( BITS:	INTEGER:=10)
+	PORT MAP(
+		CLK		=>
+		CLR		=>
+		RED_IN	=>
+		GREEN_IN	=>
+		BLUE_IN	=>
+		
+		HSYNC		=>
+		VSYNC		=>
+		VGA_SYNC_N=>
+		VGA_BLANK_N=>
+		X			=>
+		Y			=>
+		RED		=>
+		GREEN		=>
+		BLUE		=>
+		END_FRAME=>
+		PRE_FRAME=>
+		);
+		
+		
+CoordenadasCentro: DesplazaXYalCentro port map(
+		Clk		=>
+		Xin		=>
+		Yin		=>
+		Xout		=>
+		Yout		=>
+	);
+
+	
+END ARCHITECTURE;
